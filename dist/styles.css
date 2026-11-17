@@ -123,7 +123,7 @@ section[id], .toolkit { padding-top: 48px; }
 .news-card p { margin: 0; color: var(--ink-soft); font-size: 12.8px; line-height: 1.65; }
 .news-link { margin-top: auto; padding-top: 16px; color: var(--blue); font-size: 12px; font-weight: 650; }
 @media (min-width: 651px) {
-  .news-card.featured { grid-column: 1 / -1; min-height: 0; }
+  .news-card.featured { grid-column: span 2; min-height: 0; }
   .news-card.featured h3 { font-size: 20px; }
 }
 
@@ -137,6 +137,7 @@ section[id], .toolkit { padding-top: 48px; }
 .pub-badges .contribution, .pub-badges .impact, .pub-badges .theory { display: inline-flex; align-items: center; padding: 2px 7px; border: 1px solid transparent; border-radius: 5px; font-family: var(--font-body); letter-spacing: 0; }
 .pub-badges .contribution-sole { color: #8b3b22; background: #fbefe8; border-color: #efd6c9; }
 .pub-badges .contribution-cofirst { color: #244f9c; background: #edf3fb; border-color: #d6e1f1; }
+.pub-badges .contribution-corresponding { color: #267257; background: #edf7f1; border-color: #d1e8da; }
 .pub-badges .impact { color: #806018; background: #fbf5e6; border-color: #ecdfbd; }
 .pub-badges .theory { color: #267257; background: #edf7f1; border-color: #d1e8da; }
 .pub-badges .publication-status { color: var(--muted); }
