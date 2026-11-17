@@ -46,7 +46,7 @@ button { font: inherit; }
 .brand-mark { display: none; }
 .brand-copy { display: flex; flex-direction: column; line-height: 1.2; }
 .brand-copy strong { font: 700 20px/1.2 var(--font-display); }
-.brand-copy small { display: none; }
+.brand-copy small { display: block; margin-top: 4px; color: var(--muted); font-size: 10px; line-height: 1.3; letter-spacing: .015em; }
 .desktop-nav { display: flex; align-items: center; gap: 23px; }
 .desktop-nav a { position: relative; color: var(--ink-soft); font-size: 14px; font-weight: 400; }
 .desktop-nav a::after { content: ""; position: absolute; right: 0; bottom: -6px; left: 0; height: 1px; background: var(--ink); transform: scaleX(0); transform-origin: right; transition: transform .2s ease; }
@@ -63,9 +63,12 @@ button { font: inherit; }
 .hero h1 { margin: 0 0 3px; font: 700 47px/1.12 var(--font-display); letter-spacing: -.025em; }
 .hero h1 span { display: inline-block; margin-left: 8px; color: var(--muted); font: 500 26px/1.2 var(--font-body); letter-spacing: 0; vertical-align: .08em; }
 .role { margin: 4px 0 18px; color: var(--ink-soft); font-size: 16px; font-weight: 400; }
-.hero h2 { max-width: 900px; margin: 2px 0 18px; color: var(--ink); font: 700 31px/1.33 var(--font-display); letter-spacing: -.018em; }
+.hero h2 { max-width: 900px; margin: 2px 0 10px; color: var(--ink); font: 700 31px/1.33 var(--font-display); letter-spacing: -.018em; }
+.research-statement { max-width: 880px; margin: 0 0 10px; color: var(--ink-soft); font-size: 17px; line-height: 1.6; }
+.method-label { display: inline-block; max-width: 100%; margin: 0 0 20px; padding: 3px 10px; border: 1px solid var(--line); border-radius: 6px; color: var(--blue); font-size: 12px; line-height: 1.5; }
 .intro { max-width: 920px; margin: 0; color: var(--ink-soft); font-size: 15.2px; line-height: 1.78; }
 .intro p { margin: 0 0 11px; text-align: justify; }
+html[lang="en"] .intro p { text-align: left; }
 .intro p:last-child { margin-bottom: 0; }
 
 .profile-panel { grid-column: 1; grid-row: 1; align-self: start; width: 220px; padding: 0; background: transparent; }
