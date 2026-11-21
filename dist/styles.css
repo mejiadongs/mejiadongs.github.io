@@ -72,9 +72,9 @@ html[lang="en"] .intro p { text-align: left; }
 .intro p:last-child { margin-bottom: 0; }
 
 .profile-panel { grid-column: 1; grid-row: 1; align-self: start; width: 220px; padding: 0; background: transparent; }
-.portrait-wrap { position: relative; overflow: hidden; width: 220px; height: 285px; background: white; }
+.portrait-wrap { position: relative; overflow: hidden; width: 220px; align-self: start; background: white; }
 .portrait-wrap::before, .portrait-orbit, .status { display: none; }
-.portrait-wrap img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 32%; }
+.portrait-wrap img { display: block; width: 100%; height: auto; }
 .profile-links { display: flex; flex-direction: column; gap: 8px; width: 100%; margin-top: 12px; }
 .profile-links a { display: flex; align-items: center; justify-content: center; min-height: 40px; padding: 8px; border: 1px solid var(--line); border-radius: 8px; background: white; color: var(--ink-soft); font-size: 13px; transition: border-color .18s, color .18s, background .18s; }
 .profile-links a:hover { border-color: #cfcac2; color: var(--ink); background: #fdfcf9; }
@@ -190,7 +190,7 @@ section[id], .toolkit { padding-top: 48px; }
   .mobile-nav a:hover { background: #f8f6f2; }
   .hero { grid-template-columns: 180px minmax(0, 1fr); gap: 28px; }
   .profile-panel { width: 180px; }
-  .portrait-wrap { width: 180px; height: 233px; }
+  .portrait-wrap { width: 180px; }
   .hero h1 { font-size: 42px; }
   .hero h1 span { display: block; margin: 5px 0 0; }
   .hero h2 { font-size: 27px; }
@@ -207,7 +207,7 @@ section[id], .toolkit { padding-top: 48px; }
   .brand-copy strong { font-size: 18px; }
   .hero { grid-template-columns: 1fr; gap: 24px; padding-top: 30px; }
   .profile-panel { grid-column: 1; grid-row: 1; width: 100%; display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 14px; }
-  .portrait-wrap { grid-row: 1 / span 2; width: 150px; height: 194px; }
+  .portrait-wrap { grid-row: 1 / span 2; width: 150px; }
   .profile-links { grid-column: 2; margin-top: 0; gap: 6px; }
   .profile-links a { min-height: 34px; padding: 5px; font-size: 12px; }
   .profile-meta { grid-column: 1 / -1; }
